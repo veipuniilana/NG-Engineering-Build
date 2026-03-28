@@ -1,0 +1,39 @@
+# NG Engineering & Build
+
+Marketing site for NG Engineering & Build. Static files live in `public/`; `server.js` serves them locally with Express (`npm start`).
+
+## Push to GitHub (use the `veipuniilana` account)
+
+If `git push` fails with permission denied, sign in as the repo owner or use SSH:
+
+```bash
+cd Construction_Website
+git remote set-url origin git@github.com:veipuniilana/NG-Engineering-Build.git
+git push -u origin main
+```
+
+Or use GitHub CLI: `gh auth login` (choose the correct account), then `git push -u origin main`.
+
+## Host on GitHub Pages
+
+This repo includes [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml). After `main` is pushed:
+
+1. On GitHub: **Settings → Pages → Build and deployment**.
+2. Under **Source**, select **GitHub Actions** (not “Deploy from a branch”).
+3. The **Deploy GitHub Pages** workflow will run on each push to `main`.
+4. The site will be available at **https://veipuniilana.github.io/NG-Engineering-Build/**
+
+Asset links in `public/index.html` use **relative** paths so CSS and images load correctly under that project URL.
+
+## Local preview
+
+```bash
+npm install
+npm start
+```
+
+Open http://localhost:3000 (or the `PORT` you set).
+
+## Netlify (alternative)
+
+If you prefer Netlify: connect the repo, set **Publish directory** to `public`, **Build command** empty. For Express on Netlify you’d need a serverless adapter; static hosting of `public/` is enough for this site.
