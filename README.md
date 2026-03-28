@@ -2,17 +2,27 @@
 
 Marketing site for NG Engineering & Build. Static files live in `public/`; `server.js` serves them locally with Express (`npm start`).
 
-## Push to GitHub (use the `veipuniilana` account)
+## Push to GitHub (HTTPS — `veipuniilana`)
 
-If `git push` fails with permission denied, sign in as the repo owner or use SSH:
+Remote is HTTPS:
+
+```text
+https://github.com/veipuniilana/NG-Engineering-Build.git
+```
+
+1. Create a **Personal Access Token** (classic): GitHub → **Settings → Developer settings → Personal access tokens** → generate with **`repo`** scope. Copy it once (GitHub won’t show it again).
+2. Push:
 
 ```bash
 cd Construction_Website
-git remote set-url origin git@github.com:veipuniilana/NG-Engineering-Build.git
 git push -u origin main
 ```
 
-Or use GitHub CLI: `gh auth login` (choose the correct account), then `git push -u origin main`.
+3. If macOS prompts for credentials: **Username** = `veipuniilana`, **Password** = the token (not your GitHub password).
+
+To clear a wrong saved login: Keychain Access → search `github` → remove `github.com` entries, then push again.
+
+Alternatively: `gh auth login` → HTTPS → paste token when asked.
 
 ## Host on GitHub Pages
 
