@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title">
+  <title id="title">NG Engineering and Build</title>
+  <rect width="320" height="96" rx="8" fill="#1c2430"/>
+  <text x="24" y="64" font-family="system-ui,Segoe UI,sans-serif" font-size="42" font-weight="700" fill="#f6f4f1">NG</text>
+  <text x="108" y="40" font-family="system-ui,Segoe UI,sans-serif" font-size="14" font-weight="600" fill="#c45c26" letter-spacing="0.08em">ENGINEERING</text>
+  <text x="108" y="62" font-family="system-ui,Segoe UI,sans-serif" font-size="14" font-weight="600" fill="#ebe7e1" letter-spacing="0.08em">&amp; BUILD</text>
+</svg>

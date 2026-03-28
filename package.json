@@ -1,0 +1,16 @@
+{
+  "name": "construction-website-ng",
+  "version": "1.0.0",
+  "description": "NG Engineering & Build marketing site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["construction", "engineering"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
