@@ -47,3 +47,4 @@ Open http://localhost:3000 (or the `PORT` you set).
 ## Netlify (alternative)
 
 If you prefer Netlify: connect the repo, set **Publish directory** to `public`, **Build command** empty. For Express on Netlify you’d need a serverless adapter; static hosting of `public/` is enough for this site.
+# NG-Engineering-Build
